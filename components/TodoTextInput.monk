@@ -1,0 +1,4 @@
+<input class="{{ editing ? 'edit' : 'new-todo' }}"
+       type="text"
+       placeholder="{{ placeholder }}"
+       value="{{ text }}"/>

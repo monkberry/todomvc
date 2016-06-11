@@ -1,0 +1,18 @@
+{% import TodoItem from './TodoItem' %}
+{% import Footer from './Footer' %}
+<section class="main">
+    {% if filteredTodos.length > 0 %}
+        <input class="toggle-all" type="checkbox" checked={{ completedCount == filteredTodos.length }}/>
+    {% endif %}
+    <ul class="todo-list">
+        {% for todo of filteredTodos %}
+            <TodoItem todo="{{ todo }}"/>
+        {% endfor %}
+    </ul>
+    {% if todos.length > 0 %}
+        <Footer completedCount={{ completedCount }}
+                activeCount={{ activeCount }}
+                filter={{ filter }}
+                onShow={{ this.handleShow.bind(this) }}/>
+    {% endif %}
+</section>

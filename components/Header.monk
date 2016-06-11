@@ -1,0 +1,5 @@
+{% import TodoTextInput from './TodoTextInput' %}
+<header class="header">
+    <h1>todos</h1>
+    <TodoTextInput placeholder="What needs to be done?" onSave={{ this.handleSave.bind(this) }} editing={{ false }} />
+</header>

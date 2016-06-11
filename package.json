@@ -1,0 +1,44 @@
+{
+  "name": "monkberry-todomvc",
+  "version": "1.0.0",
+  "description": "Redux with Monkberry TodoMVC",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": ["transform-object-rest-spread"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monkberry/todomvc.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monkberry/todomvc/issues"
+  },
+  "homepage": "https://github.com/monkberry/todomvc",
+  "dependencies": {
+    "monkberry": "^4.0.0",
+    "monkberry-events": "^4.0.0-beta.6",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "expect": "^1.20.1",
+    "express": "^4.13.4",
+    "monkberry-loader": "^4.0.0-beta.6",
+    "node-libs-browser": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "todomvc-app-css": "^2.0.6",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
+}

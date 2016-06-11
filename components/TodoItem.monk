@@ -1,0 +1,18 @@
+{% import TodoTextInput from './TodoTextInput' %}
+<li class="{{ todo.completed ? 'completed' : '' }} {{ editing ? 'editing' : '' }}">
+    {% if editing %}
+        <div>
+            <TodoTextInput text={{ todo.text }}
+                           onSave={{ this.handleSave.bind(this) }}
+                           editing={{ true }}/>
+        </div>
+    {% else %}
+        <div class="view">
+            <input class="toggle" type="checkbox" checked={{ todo.completed }}/>
+            <label data-id="{{ todo.id }}">
+                {{ todo.text }}
+            </label>
+            <button class="destroy"/>
+        </div>
+    {% endif %}
+</li>

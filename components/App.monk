@@ -1,0 +1,6 @@
+{% import Header from './Header' %}
+{% import MainSection from './MainSection' %}
+<div class="todoapp">
+    <Header/>
+    <MainSection todos="{{ todos }}"/>
+</div>

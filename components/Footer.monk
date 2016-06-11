@@ -1,0 +1,18 @@
+<footer class="footer">
+    <span class="todo-count">
+        <strong>{{ activeCount || 'No' }}</strong>
+        {{ ' ' + (activeCount == 1 ? 'item' : 'items') }} left
+    </span>
+    <ul class="filters">
+        <li>
+            <a class="{{ filter == 'show_all' ? 'selected' : '' }}" data-filter="show_all" style="cursor: pointer;">All</a>
+            <a class="{{ filter == 'show_active' ? 'selected' : '' }}" data-filter="show_active" style="cursor: pointer;">Active</a>
+            <a class="{{ filter == 'show_completed' ? 'selected' : '' }}" data-filter="show_completed" style="cursor: pointer;">Completed</a>
+        </li>
+    </ul>
+    {% if completedCount > 0 %}
+        <button class="clear-completed">
+            Clear completed
+        </button>
+    {% endif %}
+</footer>
