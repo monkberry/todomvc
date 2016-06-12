@@ -5,3 +5,8 @@ Original example with Redux + React = 91.67 kB (min,gzip), redux + monkberry = 1
 ```
 npm start
 ```
+
+
+## Hot module replacement 
+
+![Redux with Monkberry](assets/Redux_with_Monkberry.gif)
