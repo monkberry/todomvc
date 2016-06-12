@@ -5,6 +5,7 @@ export default class extends TodoTextInput {
     super();
     this.state = {
       editing: false,
+      noBlur: false,
       onSave: null
     };
     this.on('keydown', 'input', this.onKeyDown.bind(this));
@@ -24,12 +25,14 @@ export default class extends TodoTextInput {
         super.update({text: ''});
       }
 
+      this.state.noBlur = true;
       this.state.onSave(text);
+      this.state.noBlur = false;
     }
   }
 
   onBlur(event) {
-    if (this.state.editing) {
+    if (this.state.editing && !this.state.noBlur) {
       const text = event.target.value.trim();
       this.state.onSave(text);
     }
