@@ -1,6 +1,6 @@
 # TodoMVC — Redux with Monkberry
 
-Original example with Redux + React = 91.67 kB (min,gzip), redux + monkberry = 10.77 kB (min,gzip).
+Original example with Redux + React = 91.67 kB (minified & gzipped), **Redux + Monkberry = 10.77 kB** (minified & gzipped).
 
 ```
 npm start
