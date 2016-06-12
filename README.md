@@ -10,3 +10,6 @@ npm start
 ## Hot module replacement 
 
 ![Redux with Monkberry](assets/Redux_with_Monkberry.gif)
+
+## Source maps
+![Source maps with Monkberry](assets/Source_maps.gif)
